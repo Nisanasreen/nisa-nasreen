@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glamour Beauty - Makeup Brand</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Montserrat', sans-serif;
+			background: #fff6f9;
+			color: #333;
+		}
+		header {
+			background: linear-gradient(90deg, #ff6f91 0%, #ffb6b9 100%);
+			color: white;
+			padding: 2rem 0 1rem 0;
+			text-align: center;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+		}
+		header h1 {
+			margin: 0;
+			font-size: 2.5rem;
+			letter-spacing: 2px;
+		}
+		nav {
+			margin-top: 1rem;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			margin: 0 1.5rem;
+			font-weight: 700;
+			font-size: 1.1rem;
+			transition: text-shadow 0.2s;
+		}
+		nav a:hover {
+			text-shadow: 0 0 8px #fff;
+		}
+		.hero {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			padding: 3rem 1rem;
+			background: #fff;
+		}
+		.hero-img {
+			flex: 1 1 300px;
+			max-width: 400px;
+			margin: 1rem;
+		}
+		.hero-img img {
+			width: 100%;
+			border-radius: 1.5rem;
+			box-shadow: 0 4px 24px rgba(255,111,145,0.15);
+		}
+		.hero-content {
+			flex: 2 1 300px;
+			max-width: 500px;
+			margin: 1rem;
+		}
+		.hero-content h2 {
+			font-size: 2rem;
+			color: #ff6f91;
+			margin-bottom: 1rem;
+		}
+		.hero-content p {
+			font-size: 1.2rem;
+			line-height: 1.6;
+		}
+		.cta-btn {
+			display: inline-block;
+			margin-top: 2rem;
+			padding: 0.8rem 2rem;
+			background: #ff6f91;
+			color: white;
+			font-size: 1.1rem;
+			font-weight: 700;
+			border: none;
+			border-radius: 2rem;
+			box-shadow: 0 2px 8px rgba(255,111,145,0.15);
+			cursor: pointer;
+			transition: background 0.2s;
+		}
+		.cta-btn:hover {
+			background: #ffb6b9;
+		}
+		.products {
+			padding: 3rem 1rem;
+			background: #fff6f9;
+		}
+		.products h3 {
+			text-align: center;
+			color: #ff6f91;
+			font-size: 1.7rem;
+			margin-bottom: 2rem;
+		}
+		.product-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2rem;
+		}
+		.product {
+			background: #fff;
+			border-radius: 1rem;
+			box-shadow: 0 2px 12px rgba(255,111,145,0.08);
+			padding: 1.5rem;
+			max-width: 220px;
+			text-align: center;
+		}
+		.product img {
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			border-radius: 50%;
+			margin-bottom: 1rem;
+		}
+		.product h4 {
+			margin: 0.5rem 0 0.3rem 0;
+			color: #ff6f91;
+		}
+		.product p {
+			font-size: 0.95rem;
+			color: #555;
+		}
+		footer {
+			background: #ff6f91;
+			color: white;
+			text-align: center;
+			padding: 1.2rem 0;
+			font-size: 1rem;
+			margin-top: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Glamour Beauty</h1>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#products">Products</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+	<section class="hero">
+		<div class="hero-img">
+			<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Makeup Model">
+		</div>
+		<div class="hero-content">
+			<h2>Unleash Your Inner Glam</h2>
+			<p>Discover the latest in beauty trends with Glamour Beauty. Our makeup products are designed to empower you to express your unique style, from bold looks to natural elegance. Shine with confidence every day!</p>
+			<a class="cta-btn" href="#products">Shop Now</a>
+		</div>
+	</section>
+	<section class="products" id="products">
+		<h3>Featured Products</h3>
+		<div class="product-list">
+			<div class="product">
+				<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=100&q=80" alt="Lipstick">
+				<h4>Velvet Matte Lipstick</h4>
+				<p>Rich color, long-lasting, and ultra-smooth finish for every occasion.</p>
+			</div>
+			<div class="product">
+				<img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=100&q=80" alt="Eyeshadow">
+				<h4>Shimmer Eyeshadow Palette</h4>
+				<p>Vibrant shades to create endless eye-catching looks.</p>
+			</div>
+			<div class="product">
+				<img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=100&q=80" alt="Foundation">
+				<h4>Flawless Foundation</h4>
+				<p>Lightweight, buildable coverage for a radiant complexion.</p>
+			</div>
+		</div>
+	</section>
+	<section class="about" id="about" style="padding: 3rem 1rem; background: #fff;">
+		<h3 style="text-align:center; color:#ff6f91; font-size:1.7rem;">About Glamour Beauty</h3>
+		<p style="max-width:700px; margin:1.5rem auto; font-size:1.1rem; color:#555; text-align:center;">Glamour Beauty is dedicated to celebrating individuality and self-expression. Our products are cruelty-free, high-quality, and crafted to suit every skin tone and style. Join our community and redefine beauty on your own terms!</p>
+	</section>
+	<section class="contact" id="contact" style="padding: 3rem 1rem; background: #fff6f9;">
+		<h3 style="text-align:center; color:#ff6f91; font-size:1.7rem;">Contact Us</h3>
+		<p style="max-width:700px; margin:1.5rem auto; font-size:1.1rem; color:#555; text-align:center;">Have questions or need help? Email us at <a href="mailto:info@glamourbeauty.com" style="color:#ff6f91; text-decoration:underline;">info@glamourbeauty.com</a> or follow us on social media for the latest updates and tips.</p>
+	</section>
+	<footer>
+		&copy; 2025 Glamour Beauty. All rights reserved.
+	</footer>
+</body>
+</html>
